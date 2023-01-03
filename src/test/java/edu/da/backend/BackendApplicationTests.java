@@ -1,4 +1,4 @@
-package com.cidenet.backend;
+package edu.da.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
