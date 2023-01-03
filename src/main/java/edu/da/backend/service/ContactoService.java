@@ -10,6 +10,6 @@ public interface ContactoService {
     public Optional<Contacto> getcontacto(Integer id);
     public List<Contacto> contactos();
     public Contacto update(Contacto contacto);
-    public boolean delete(Integer id);
+    public void delete(Integer id);
     public Long getAutoIncrementValue();
 }

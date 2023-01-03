@@ -77,12 +77,10 @@ public class ContactoImp implements ContactoService{
     }
 
     @Override
-    public boolean delete(Integer id) {
+    public void delete(Integer id) {
         if(contactoRepository.existsById(id)){
             contactoRepository.deleteById(id);
-            return true;
-        }else
-            return false;
+        }
     }
 
     @Override

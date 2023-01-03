@@ -63,5 +63,6 @@ public class ContactoController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteContacto(@PathVariable ("id") Integer id){
         contactoService.delete(id);
+        return;
     }
 }
