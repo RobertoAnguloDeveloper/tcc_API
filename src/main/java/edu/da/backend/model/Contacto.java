@@ -19,7 +19,7 @@ public class Contacto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer imagen;
+    private Long imagen;
     private String nombres;
     private String apellidos;
     private String telefono;
