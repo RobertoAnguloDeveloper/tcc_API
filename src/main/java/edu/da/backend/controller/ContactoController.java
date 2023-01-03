@@ -32,8 +32,8 @@ public class ContactoController {
 
     @PostMapping("/save")
     @ResponseStatus(HttpStatus.CREATED)
-    public void createContacto(@RequestBody Contacto contacto){
-        contactoService.create(contacto);
+    public Contacto createContacto(@RequestBody Contacto contacto){
+        return contactoService.create(contacto);
     }
 
     @GetMapping("/all")
