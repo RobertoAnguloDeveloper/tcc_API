@@ -47,6 +47,10 @@ public class ContactoImp implements ContactoService{
             if (contactoRepository.existsById(contacto.getId())){
                 Optional<Contacto> oldcontacto = contactoRepository.findById(contacto.getId());
                 Contacto editedcontacto = oldcontacto.get();
+
+                if (contacto.getImagen() != null){
+                    editedcontacto.setImagen(contacto.getImagen());
+                }
                 if (contacto.getNombres() != null){
                     editedcontacto.setNombres(contacto.getNombres());
                 }
